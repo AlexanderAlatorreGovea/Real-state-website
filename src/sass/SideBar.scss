@@ -1,0 +1,68 @@
+@import './reset';
+@import './variables';
+
+
+.sidenav {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: $color-secondary;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 50px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $color-primary;
+    display: block;
+    transition: .2s ease-in-out;
+}
+a.menu-list {
+    padding-top: 50px;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.menu-list__container {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    font-size: 80px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+.open{
+    width: 100%;
+}
+
+.close{
+    width: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+      padding-top: 15px;
+    }
+  .sidenav a {
+      font-size: 18px;
+    }
+}
