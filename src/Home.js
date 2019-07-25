@@ -63,7 +63,7 @@ class Home extends Component {
             
                 <div class="header">
                     <img src={Logo} alt="Nexter logo" class="header__logo" />
-                    <h3 class="heading-3">Your own home:</h3>
+                    <h3 class="heading-3">sfassdfadsfs Your own home:</h3>
                     <h1 class="heading-1">The ultimate personal freedom</h1>
                     <button class="btn header__btn"><Link  style={{color: 'white'}} to={{ pathname: '/Listings' }}>View our properties</Link></button>
                     <div class="header__seenon-text">Seen on</div>
