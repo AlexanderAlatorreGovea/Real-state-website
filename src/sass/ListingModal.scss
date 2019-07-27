@@ -7,7 +7,22 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
-}
+
+  padding: 0;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  justify-self: center;
+  z-index: 100;
+  width: 450px;
+  height: 500px;
+  @media only screen and (min-width: 1800px) {
+    width: 1440px;
+  }
+} 
 
 
 .svg-container{
@@ -72,11 +87,14 @@ i.icon.heart {
       color: #fff;
       font-weight: 400;
       transform: translateY(50%);
+      @media only screen and (min-width: 1800px) {
+        font-size: 5rem;
+      }
   }
 
   &__location,
   &__rooms {
-      margin-top: 2.5rem;
+      margin-top: 2.5rem; 
   }
 
   &__location,
@@ -89,6 +107,9 @@ i.icon.heart {
 
       display: flex;
       align-items: center;
+      @media only screen and (min-width: 1800px) {
+        font-size: 3rem;
+      }
 
       i.icon, i.icons, i.icon.heart {
           color: $color-primary;
@@ -96,10 +117,60 @@ i.icon.heart {
           margin-right: 1rem;
           outline: none;
           font-size: 1rem;
+          @media only screen and (min-width: 1800px) {
+            font-size: 3rem;
+            margin-right: 4rem;
+          }
       }
+  }
+  .home-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+    height: 100vh;
   }
 
   &__btn {
       grid-column: 1 / -1;
+        background-color: #c69963;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 1.8rem 3rem;
+        cursor: pointer;
+        -webkit-transition: all .2s;
+        transition: all .2s; 
+        font-weight: 300;
+        line-height: 1.6; 
+        font-size: 62.5%; 
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        .contact {
+          margin-left: 35%;
+          @media only screen and (min-width: 1800px) {
+            font-size: 3rem;
+            margin-left: 33%;
+          }
+        }
+        &:hover {
+          background-color: #B28451;
+          font-size: 62.5%; 
+    }
+  }
+}
+
+.x {
+  @media only screen and (min-width: 1800px) {
+    width: 3rem;
+    height: 3rem; 
   }
 }

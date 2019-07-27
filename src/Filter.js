@@ -14,7 +14,7 @@ class Filter extends Component {
           //console.log(cities)
           return cities.map((item) => {
             return(
-              <option key={item} value={item}>{item}</option>
+              <option id="option" key={item} value={item}>{item}</option>
             )
           })
         }
@@ -28,7 +28,7 @@ class Filter extends Component {
           //console.log(homeTypes)
           return homeTypes.map((item) => {
             return(
-              <option key={item} value={item}>{item}</option>
+              <option id="option"  key={item} value={item}>{item}</option>
             )
           })
         }
@@ -41,7 +41,7 @@ class Filter extends Component {
           //console.log(bedrooms)
           return bedrooms.map((item) => {
             return(
-              <option key={item} value={item}>{item}+ BR</option>
+              <option id="option"  key={item} value={item}>{item}+ BR</option>
             )
           })
         }
@@ -56,14 +56,14 @@ class Filter extends Component {
                 <h4>Filter</h4>
                 <label htmlFor="city">City</label>
                 <select name="city" className="neighborhood filters" onChange={this.props.change} >
-                    <option className="" value="All">All</option>
+                    <option id="option"  className="" value="All">All</option>
                     {this.cities()}
                 </select>
                 <label htmlFor="homeType">Home Type</label>
                 <select name="homeType" className="homeType  filters"
                      onChange={this.props.change} 
                 >
-                    <option value="All" className="">All Homes</option>
+                    <option id="option"  value="All" className="">All Homes</option>
                    {this.homeTypes()}
                 </select>
                 <label htmlFor="bedrooms">Bedrooms</label>

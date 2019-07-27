@@ -50,20 +50,20 @@ class Home extends Component {
 
     render() {
         return (
-                <div className="container">
+                <div className="container" >
                     {this.state.showModal &&
                     <SideBar onClose={this.handleCloseModal}
                     showModal={this.state.showModal}/>
                     }
                 <div class="sidebar">
-                    <button class="nav-btn" onClick={this.handleShowModal}></button>
+                    <span style={{cursor: 'pointer'}}><button class="nav-btn" style={{cursor: 'pointer'}} onClick={this.handleShowModal}></button></span>
                 </div>
 
 
             
                 <div class="header">
                     <img src={Logo} alt="Nexter logo" class="header__logo" />
-                    <h3 class="heading-3">sfassdfadsfs Your own home:</h3>
+                    <h3 class="heading-3">Your own home:</h3>
                     <h1 class="heading-1">The ultimate personal freedom</h1>
                     <button class="btn header__btn"><Link  style={{color: 'white'}} to={{ pathname: '/Listings' }}>View our properties</Link></button>
                     <div class="header__seenon-text">Seen on</div>
@@ -79,19 +79,19 @@ class Home extends Component {
                 <div class="realtors">
                     <h3 class="heading-3">Top 3 Realtors</h3>
                     <div class="realtors__list">
-                        <img src={realtor_1} alt="Realtor 1" className="realtors__img" />
+                        <img src={realtor_1} alt="Realtor 1" id="realtors__img" className="realtors__img" />
                         <div class="realtors__details">
                             <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
                             <p class="realtors__sold">245 houses sold</p>
                         </div>
 
-                        <img src={realtor_2}  alt="Realtor 2" className="realtors__img" />
+                        <img src={realtor_2}  alt="Realtor 2" id="realtors__img"  className="realtors__img" />
                         <div class="realtors__details">
                             <h4 class="heading-4 heading-4--light">Kim Brown</h4>
                             <p class="realtors__sold">212 houses sold</p>
                         </div>
 
-                        <img src={realtor_3} alt="Realtor 3" className="realtors__img" />
+                        <img src={realtor_3} alt="Realtor 3" id="realtors__img"  className="realtors__img" />
                         <div class="realtors__details">
                             <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
                             <p class="realtors__sold">198 houses sold</p>

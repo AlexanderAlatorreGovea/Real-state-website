@@ -54,7 +54,7 @@ class Listings extends Component {
                             <option value="price-asc">Highest Price</option>
                         </select>
                         <div className="view">
-                            <i style={{fontSize: '1.5rem'}}className="fas  fa-th-list"></i>
+                            <i className="fas  fa-th-list"></i>
                             <i className="fa fa-th" aria-hidden="true"></i>
                         </div>
                     </div>

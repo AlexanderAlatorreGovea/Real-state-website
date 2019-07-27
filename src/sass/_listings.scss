@@ -1,6 +1,6 @@
 @import './variables';
 
-#header {
+#header { 
   background: #101d2c;
   color: white;
   display: flex;
@@ -11,10 +11,17 @@
   align-items: center;
   display: flex;
   z-index: 200000;
+  @media only screen and (min-width: 1800px) {
+    height: 11rem;
+    padding: 2rem;
+  }
     .logo{
       height: 3rem;
       margin-left: 20px;
       width: 9rem;
+      @media only screen and (min-width: 1800px) {
+        width: 18rem;
+      }
     }
     nav{
       margin-right: 20px;
@@ -42,6 +49,9 @@
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  @media only screen and (min-width: 1800px) {
+    width: 7rem;
+  }
   @media only screen and (max-width: 425px) {
     margin: 0;
   }
@@ -64,21 +74,33 @@
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+  @media only screen and (min-width: 1800px) {
+    height: 5px;
+  }
 }
 
 #nav-icon1 span:nth-child(1) {
   top: 0px;
   background: $color-primary;
+  @media only screen and (min-width: 1800px) {
+    top: -7;
+  }
 }
 
 #nav-icon1 span:nth-child(2) {
   top: 18px;
   background: $color-primary;
+  @media only screen and (min-width: 1800px) {
+    top: 25px;
+  }
 }
 
 #nav-icon1 span:nth-child(3) {
   top: 36px;
   background: $color-primary;
+  @media only screen and (min-width: 1800px) {
+    top: 49px;
+  }
 }
 
 #nav-icon1.open span:nth-child(1) {
