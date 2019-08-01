@@ -125,10 +125,10 @@ $bp-small: 37.5em;    // 600px;
       padding: 1.5rem;
       display: block;
       transition: all .2s;
-      font-size: 73%;
+      font-size: 73%;/*
       @media only screen and (min-width: 1800px) {
         font-size: 1.2rem;
-      }
+      }*/
   }
 
   &__link:hover,
@@ -145,10 +145,10 @@ $bp-small: 37.5em;    // 600px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 70%;
+  width: 70%;/*
   @media only screen and (min-width: 1800px) {
     font-size: 1.4rem;
-}
+}*/
 }
 ///////////////////
 
@@ -572,6 +572,7 @@ $bp-small: 37.5em;    // 600px;
 
 
 @media only screen and (min-width: 1800px) {
+    /*
     #realtors__img{
         width: 40rem;
         border-radius: 50%;
@@ -584,7 +585,8 @@ $bp-small: 37.5em;    // 600px;
     }
     .heading-3 {
         font-size: 2rem;
-    }
+    }*/
+    ///Leave as it is
     .header__logo {
         height: 6rem;
     }
