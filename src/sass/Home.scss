@@ -290,7 +290,9 @@ $bp-small: 37.5em;    // 600px;
 
       font-size: 1.6rem;
       color: $color-grey-light-2;
-
+      @media only screen and (max-width: 425px) {
+        display: none;
+      }
       &::before,
       &::after {
           content: "";
@@ -306,7 +308,9 @@ $bp-small: 37.5em;    // 600px;
       grid-column-gap: 3rem;
       justify-items: center;
       align-items: center;
-
+      @media only screen and (max-width: 425px) {
+        display: none;
+      }
       img {
           max-height: 2.5rem;
           max-width: 100%;
