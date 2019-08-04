@@ -11,7 +11,7 @@ class Filter extends Component {
         if(this.props.globalState.populateFormsData.cities != undefined) {
           let { cities } = this.props.globalState.populateFormsData
     
-          //console.log(cities)
+         
           return cities.map((item) => {
             return(
               <option id="option" key={item} value={item}>{item}</option>
@@ -25,7 +25,7 @@ class Filter extends Component {
         if(this.props.globalState.populateFormsData.homeTypes != undefined) {
           let { homeTypes } = this.props.globalState.populateFormsData
     
-          //console.log(homeTypes)
+     
           return homeTypes.map((item) => {
             return(
               <option id="option"  key={item} value={item}>{item}</option>
@@ -38,7 +38,7 @@ class Filter extends Component {
         if(this.props.globalState.populateFormsData.bedrooms != undefined) {
           let { bedrooms } = this.props.globalState.populateFormsData
     
-          //console.log(bedrooms)
+          
           return bedrooms.map((item) => {
             return(
               <option id="option"  key={item} value={item}>{item}+ BR</option>

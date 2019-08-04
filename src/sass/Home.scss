@@ -58,7 +58,6 @@ $bp-small: 37.5em;    // 600px;
 
   @supports(display: grid) {
       display: grid;
-      //grid-template-columns: repeat(3, 1fr);
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-gap: 6rem;
       align-items: start;
@@ -125,10 +124,7 @@ $bp-small: 37.5em;    // 600px;
       padding: 1.5rem;
       display: block;
       transition: all .2s;
-      font-size: 73%;/*
-      @media only screen and (min-width: 1800px) {
-        font-size: 1.2rem;
-      }*/
+      font-size: 73%;
   }
 
   &__link:hover,
@@ -145,20 +141,15 @@ $bp-small: 37.5em;    // 600px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 70%;/*
-  @media only screen and (min-width: 1800px) {
-    font-size: 1.4rem;
-}*/
+  width: 70%;
 }
-///////////////////
+///////////////////////////////////////////////////
 
 .gallery {
   background-color: $color-grey-light-1;
   grid-column: full-start / full-end;
 
   display: grid;
-  /*grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 5vw);*/
   grid-template: repeat(7, 5vw) / repeat(8, 1fr);
 
 
@@ -320,7 +311,7 @@ $bp-small: 37.5em;    // 600px;
 }
 
 
-/////////////////////////////
+/////////////////////////////////////////////////////////////////
 
 .realtors {
   background-color: $color-secondary;
@@ -546,7 +537,12 @@ $bp-small: 37.5em;    // 600px;
   &--dark { color: $color-grey-dark-1; }
 }
 
-
+#find {
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
 .header{
   .btn {
     background-color: $color-primary;
@@ -558,7 +554,7 @@ $bp-small: 37.5em;    // 600px;
     text-transform: uppercase;
     padding: 1.8rem 3rem;
     cursor: pointer;
-    transition: all .2s;
+    transition: all .3s ease-in-out;
   
     &:hover {
         background-color: $color-primary-dark;
@@ -576,21 +572,6 @@ $bp-small: 37.5em;    // 600px;
 
 
 @media only screen and (min-width: 1800px) {
-    /*
-    #realtors__img{
-        width: 40rem;
-        border-radius: 50%;
-        display: block;
-        margin: 90px;
-    }
-    .realtors__details{
-        margin-top: 6rem;
-        margin-left: 2rem;
-    }
-    .heading-3 {
-        font-size: 2rem;
-    }*/
-    ///Leave as it is
     .header__logo {
         height: 6rem;
     }

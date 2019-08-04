@@ -55,96 +55,90 @@ class Home extends Component {
                     <SideBar onClose={this.handleCloseModal}
                     showModal={this.state.showModal}/>
                     }
-                <div class="sidebar">
-                    <span style={{cursor: 'pointer'}}><button class="nav-btn" style={{cursor: 'pointer'}} onClick={this.handleShowModal}></button></span>
+                <div className="sidebar" onClick={this.handleShowModal}>
+                    <span style={{cursor: 'pointer'}}><button className="nav-btn" style={{cursor: 'pointer'}} ></button></span>
                 </div>
-
-
             
-                <div class="header">
-                    <img src={Logo} alt="Nexter logo" class="header__logo" />
-                    <h3 class="heading-3">Your own home:</h3>
-                    <h1 class="heading-1">The ultimate personal freedom</h1>
-                    <button class="btn header__btn"><Link  style={{color: 'white'}} to={{ pathname: '/Listings' }}>View our properties</Link></button>
-                    <div class="header__seenon-text">Seen on</div>
-                    <div class="header__seenon-logos">
+                <div className="header">
+                    <img src={Logo} alt="Nexter logo" className="header__logo" />
+                    <h3 className="heading-3">Your own home:</h3>
+                    <h1 className="heading-1">The ultimate personal freedom</h1>
+                    <button className="btn header__btn"><Link  style={{color: 'white'}} to={{ pathname: '/Listings' }}>View our properties</Link></button>
+                    <div className="header__seenon-text">Seen on</div>
+                    <div className="header__seenon-logos">
                         <img src={logo_bbc} alt="Seen on logo 1" />
                         <img src={logo_forbes} alt="Seen on logo 2"/>
                         <img src={logo_techcrunch} alt="Seen on logo 3"/>
                         <img src={logo_bi} alt="Seen on logo 4" />
                     </div>
-                </div>
+                </div> 
 
 
-                <div class="realtors">
-                    <h3 class="heading-3">Top 3 Realtors</h3>
-                    <div class="realtors__list">
+                <div className="realtors">
+                    <h3 className="heading-3">Top 3 Realtors</h3>
+                    <div className="realtors__list">
                         <img src={realtor_1} alt="Realtor 1" id="realtors__img" className="realtors__img" />
-                        <div class="realtors__details">
-                            <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
-                            <p class="realtors__sold">245 houses sold</p>
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">Erik Feinman</h4>
+                            <p className="realtors__sold">245 houses sold</p>
                         </div>
 
                         <img src={realtor_2}  alt="Realtor 2" id="realtors__img"  className="realtors__img" />
-                        <div class="realtors__details">
-                            <h4 class="heading-4 heading-4--light">Kim Brown</h4>
-                            <p class="realtors__sold">212 houses sold</p>
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">Kim Brown</h4>
+                            <p className="realtors__sold">212 houses sold</p>
                         </div>
 
                         <img src={realtor_3} alt="Realtor 3" id="realtors__img"  className="realtors__img" />
-                        <div class="realtors__details">
-                            <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
-                            <p class="realtors__sold">198 houses sold</p>
+                        <div className="realtors__details">
+                            <h4 className="heading-4 heading-4--light">Toby Ramsey</h4>
+                            <p className="realtors__sold">198 houses sold</p>
                         </div>
                     </div>
                 </div>
 
-
-
-
-
-                <div class="story__pictures" style={{ backgroundImage:
+                <div className="story__pictures" style={{ backgroundImage:
                     `linear-gradient(rgba(198, 153, 99, 0.3), rgba(198, 153, 99, 0.3)),  url('${back}')` }}>
-                    <img src={img_story_1} alt="Couple with new house" class="story__img--1" /> 
-                    <img src={img_story_2} alt="New house" class="story__img--2" />
+                    <img src={img_story_1} alt="Couple with new house" className="story__img--1" /> 
+                    <img src={img_story_2} alt="New house" className="story__img--2" />
                 </div>
 
-                <div class="story__content">
-                    <h3 class="heading-3 mb-sm">Happy Customers</h3>
-                    <h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best decision of our lives&rdquo;</h2>
-                    <p class="story__text">
+                <div className="story__content">
+                    <h3 className="heading-3 mb-sm">Happy Customers</h3>
+                    <h2 className="heading-2 heading-2--dark mb-md">&ldquo;The best decision of our lives&rdquo;</h2>
+                    <p className="story__text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
                     </p>
-                    <button class="btn">Find your own home</button>
+                    <button id="find" className="btn"><Link  style={{color: 'white'}} to={{ pathname: '/Listings' }}>Find your own home</Link></button>
                 </div>
 
-                <section class="gallery">
-                  <figure class="gallery__item gallery__item--1"><img src={gal_1} alt="Gallery image 1" class="gallery__img" /></figure>
-                  <figure class="gallery__item gallery__item--2"><img src={gal_2} alt="Gallery image 2" class="gallery__img"/></figure>
-                  <figure class="gallery__item gallery__item--3"><img src={gal_3} alt="Gallery image 3" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--4"><img src={gal_4} alt="Gallery image 4" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--5"><img src={gal_5} alt="Gallery image 5" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--6"><img src={gal_6} alt="Gallery image 6" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--7"><img src={gal_7} alt="Gallery image 7" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--8"><img src={gal_8} alt="Gallery image 8" class="gallery__img" /></figure>
-                    <figure class="gallery__item gallery__item--9"><img src={gal_9} alt="Gallery image 9" class="gallery__img"/></figure>
-                    <figure class="gallery__item gallery__item--10"><img src={gal_10} alt="Gallery image 10" class="gallery__img" /></figure>
-                    <figure class="gallery__item gallery__item--11"><img src={gal_11} alt="Gallery image 11" class="gallery__img" /></figure>
-                    <figure class="gallery__item gallery__item--12"><img src={gal_12} alt="Gallery image 12" class="gallery__img" /></figure>
-                    <figure class="gallery__item gallery__item--13"><img src={gal_13} alt="Gallery image 13" class="gallery__img" /></figure>
-                    <figure class="gallery__item gallery__item--14"><img src={gal_14} alt="Gallery image 14" class="gallery__img" /></figure>
+                <section className="gallery">
+                  <figure className="gallery__item gallery__item--1"><img src={gal_1} alt="Gallery image 1" className="gallery__img" /></figure>
+                  <figure className="gallery__item gallery__item--2"><img src={gal_2} alt="Gallery image 2" className="gallery__img"/></figure>
+                  <figure className="gallery__item gallery__item--3"><img src={gal_3} alt="Gallery image 3" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--4"><img src={gal_4} alt="Gallery image 4" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--5"><img src={gal_5} alt="Gallery image 5" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--6"><img src={gal_6} alt="Gallery image 6" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--7"><img src={gal_7} alt="Gallery image 7" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--8"><img src={gal_8} alt="Gallery image 8" className="gallery__img" /></figure>
+                    <figure className="gallery__item gallery__item--9"><img src={gal_9} alt="Gallery image 9" className="gallery__img"/></figure>
+                    <figure className="gallery__item gallery__item--10"><img src={gal_10} alt="Gallery image 10" className="gallery__img" /></figure>
+                    <figure className="gallery__item gallery__item--11"><img src={gal_11} alt="Gallery image 11" className="gallery__img" /></figure>
+                    <figure className="gallery__item gallery__item--12"><img src={gal_12} alt="Gallery image 12" className="gallery__img" /></figure>
+                    <figure className="gallery__item gallery__item--13"><img src={gal_13} alt="Gallery image 13" className="gallery__img" /></figure>
+                    <figure className="gallery__item gallery__item--14"><img src={gal_14} alt="Gallery image 14" className="gallery__img" /></figure>
                 </section>
 
-                <footer class="footer" style={{marginTop: '20%'}}>
-                    <ul class="nav">
-                            <li class="nav__item"><Link style={{color: 'white'}} to={{ pathname: '/Listings' }} class="nav__link">Find your dream home</Link></li>
-                            <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link">Request proposal</Link></li>
-                            <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link">Download home planner</Link></li>
-                            <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link">Contact us</Link></li>
-                            <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link">Submit your property</Link></li>
+                <footer className="footer" style={{marginTop: '20%'}}>
+                    <ul className="nav">
+                            <li className="nav__item"><Link style={{color: 'white'}} to={{ pathname: '/Listings' }} className="nav__link">Find your dream home</Link></li>
+                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link">Request proposal</Link></li>
+                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link">Download home planner</Link></li>
+                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link">Contact us</Link></li>
+                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link">Submit your property</Link></li>
                             <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link">Come work with us!</Link></li>
                     </ul>
-                    <p class="copyright">
+                    <p className="copyright">
                         &copy; Copyright 2019 by Alexander Govea.
                     </p>
                 </footer>

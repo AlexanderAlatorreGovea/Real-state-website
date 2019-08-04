@@ -102,20 +102,7 @@ class ListingsView extends React.Component {
       })
     }
 
-    /* 
-    if(this.state.elavator != false) {
-      newData = newData.filter((item) => {
-        //console.log(item.extras.filter(extra => { return extra.map( elavators => { return elavators.elavator }) }))
-        //console.log(item.extras.map(extra => { return extra.filter((elavators) => { return elavators.elavator }) }))
-        //console.log(item.extras.filter(extra => { return extra['elavator'] }))
-        //console.log(item)
-        //console.log(item.extras['elavator'])
-        //console.log(item.extras.includes('elavator'))
-        return item.extras.elavator == this.state.elavator
-      })
-    }*/
     
-
     if(this.state.search != ''){
       newData = newData.filter((item) => {
         let city = item.city.toLowerCase()

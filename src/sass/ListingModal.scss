@@ -18,10 +18,7 @@
   justify-self: center;
   z-index: 100;
   width: 450px;
-  height: 500px;/*
-  @media only screen and (min-width: 1800px) {
-    width: 1440px;
-  }*/
+  height: 500px;
 } 
 
 
@@ -107,21 +104,12 @@ i.icon.heart {
 
       display: flex;
       align-items: center;
-      /*
-      @media only screen and (min-width: 1800px) {
-        font-size: 3rem;
-      }*/
-
       i.icon, i.icons, i.icon.heart {
           color: $color-primary;
           width: 2rem;
           margin-right: 1rem;
           outline: none;
-          font-size: 1rem;/*
-          @media only screen and (min-width: 1800px) {
-            font-size: 3rem;
-            margin-right: 4rem;
-          }*/
+          font-size: 1rem;
       }
   }
   .home-container {
@@ -156,11 +144,7 @@ i.icon.heart {
         font-size: 62.5%; 
         box-shadow: 0 0 5px rgba(81, 203, 238, 1);
         .contact {
-          margin-left: 35%;/*
-          @media only screen and (min-width: 1800px) {
-            font-size: 3rem;
-            margin-left: 33%;
-          }*/
+          margin-left: 35%;
         }
         &:hover {
           background-color: #B28451;
@@ -169,9 +153,3 @@ i.icon.heart {
   }
 }
 
-.x {/*
-  @media only screen and (min-width: 1800px) {
-    width: 3rem;
-    height: 3rem; 
-  }*/
-}

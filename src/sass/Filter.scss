@@ -10,30 +10,16 @@
     background: $grey; 
     width: 30%;
     max-width: 300px;
-    float: left;/*
-    @media only screen and (min-width: 1800px) {
-        max-width: 500px;
-    }*/
+    float: left;
     .inside{
         padding: 20px;
-        max-width: 300px;/*
-        @media only screen and (min-width: 1800px) {
-            max-width: 500px;
-        }*/
+        max-width: 300px;
     }
     h4{
         font-size: .9rem;
         margin-bottom: 25px;
         text-transform: uppercase;
-        font-weight: 700px;/*
-        @media only screen and (min-width: 1800px) {
-            font-size: 2.9rem;
-        }*/
-    }
-    label {/*
-        @media only screen and (min-width: 1800px) {
-            font-size: 2.5rem;
-        }*/
+        font-weight: 700px;
     }
     select{
         background: transparent;
@@ -45,18 +31,12 @@
         margin-bottom: 25px;
         width: 100%;
     }
-    .filters{/*
-        @media only screen and (min-width: 1800px) {
-            font-size: 2rem;
-        }*/
+    .filters{
         .title{
             font-size: .9rem;
             display: block;
             margin-bottom: 1rem;
-            color: $darkgrey;/*
-            @media only screen and (min-width: 1800px) {
-                font-size: 2rem;
-            }*/
+            color: $darkgrey;
         }
         input[type="text"]{
             border-radius: 5px;
@@ -65,10 +45,7 @@
             padding: .4rem;
             width: 45%;
             margin-right: 2.5%; 
-            margin-bottom: 1rem;/*
-            @media only screen and (min-width: 1800px) {
-                font-size: 2.5rem;
-            }*/
+            margin-bottom: 1rem;
             @media only screen and (min-width: 425px) {
                 width: 90%;
             }
