@@ -43,22 +43,3 @@ class Header extends Component {
 export default Header;
 
 
-/*
-
-<Link  to={{ pathname: '/' }}></Link>
-*******Prev sidebar
- {this.state.showModal &&
-                <SideBar onClose={this.handleCloseModal}
-                         showModal={this.state.showModal}
-                />
-                }
-
-
-Previous header you may want to use it you may not
-    <nav>
-                    <a href="#">Create Ads</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Log in</a>
-                    <a onClick={this.handleShowModal} className="register-btn" href="#">Register</a>
-                </nav>
-*/

@@ -281,6 +281,9 @@ $bp-small: 37.5em;    // 600px;
 
       font-size: 1.6rem;
       color: $color-grey-light-2;
+      @media only screen and (max-width: 1400px) {
+        display: none;
+      }
       @media only screen and (max-width: 425px) {
         display: none;
       }
@@ -299,6 +302,9 @@ $bp-small: 37.5em;    // 600px;
       grid-column-gap: 3rem;
       justify-items: center;
       align-items: center;
+      @media only screen and (max-width: 1400px) {
+        display: none;
+      }
       @media only screen and (max-width: 425px) {
         display: none;
       }
@@ -537,7 +543,7 @@ $bp-small: 37.5em;    // 600px;
   &--dark { color: $color-grey-dark-1; }
 }
 
-#find {
+#find { 
   transition: all .3s ease-in-out;
   &:hover {
     background-color: $color-primary-dark;
@@ -555,7 +561,9 @@ $bp-small: 37.5em;    // 600px;
     padding: 1.8rem 3rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
-  
+    @media only screen and (max-width: 1400px) {
+        display: none;
+    }
     &:hover {
         background-color: $color-primary-dark;
     }
