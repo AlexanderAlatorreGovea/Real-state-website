@@ -1,2 +1,2 @@
 
-This section has moved here: 
+This section has moved
