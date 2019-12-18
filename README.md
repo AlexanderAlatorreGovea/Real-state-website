@@ -1,2 +1,2 @@
 
-This section has 
+This section 
