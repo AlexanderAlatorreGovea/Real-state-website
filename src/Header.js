@@ -30,11 +30,7 @@ class Header extends Component {
                 </div>
                 </div>
                 </nav>
-                {this.state.showModal &&
-                <SideBar onClose={this.handleCloseModal}
-                         showModal={this.state.showModal}
-                />
-                }
+                {this.state.showModal && <SideBar onClose={this.handleCloseModal} showModal={this.state.showModal}/>}
             </div>
         );
     }

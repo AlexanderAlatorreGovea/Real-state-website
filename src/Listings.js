@@ -4,7 +4,8 @@ import realtor_1 from './images/realtor-1.jpeg';
 import realtor_2 from './images/realtor-2.jpeg';
 import realtor_3 from './images/realtor-3.jpeg';
 import ListingModal from './ListingModal';
- 
+import Pagination from './Pagination';
+
 class Listings extends Component {
     constructor () {
         super() 
@@ -18,8 +19,10 @@ class Listings extends Component {
           address: '',
           city: '',
           rooms: '',
-          floorSpace: '',
-          price: 0
+          floorSpace: '', 
+          price: 0,
+          currentPage: 1,
+          listingPerPage: 13,
         }
         this.handleShowModal = this.handleShowModal.bind(this)
     }
@@ -37,9 +40,24 @@ class Listings extends Component {
         floorSpace: listing.floorSpace,
         price: listing.price
       });
-    };    
+    };   
+
+    paginate = (pageNumber) => {
+      this.setState({
+        currentPage: pageNumber
+      })
+    } 
 
     render() {
+      const { currentPage, listingPerPage } = this.state;
+      const totalListings = this.props.listingsData.length;
+      const indexOfLastProduct = currentPage * listingPerPage;
+      const indexOfFirstProduct = indexOfLastProduct - listingPerPage;
+      const currentListings = this.props.listingsData.slice(
+        indexOfFirstProduct,
+        indexOfLastProduct
+      ); 
+      console.log(this.props)
         return (
             <div id="listings">
                <section className="search-area">
@@ -61,7 +79,7 @@ class Listings extends Component {
                </section>
 
                <section className="listings-results">
-                      {this.props.listingsData.map((listing, index) => {
+                      {currentListings.length ? currentListings.map((listing, index) => {
                         return (
                           <div className="col-md-3" key={index}>
                             <div className="listing">
@@ -93,38 +111,31 @@ class Listings extends Component {
                                     </div>
                                   </div>
                                 </div>
-                              </div>
+                              </div> 
                               <div className="bottom-info">
                                 <span className="price">${listing.price}</span>
                                 <span className="location"><i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
                               </div>
                             </div>
                           </div>
-                          )   
-                       } 
-                       )}
-                       
-                       {this.state.showModal &&
-                          <ListingModal
-                          handleShowModal={this.handleShowModal}
-                          props={this.state}
-                          image={this.state.image} address={this.state.address} 
-                          city={this.state.city} rooms={this.state.rooms} floorSpace={this.state.floorSpace}
-                          price={this.state.price} data={this.state}
-                          onCloseModal={this.handleCloseModal}
-                          /> }
-               </section>
-               <section className="pagination">
-                    <ul className="pages">
-                        <li>Prev</li>
-                        <li className="active">1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>Next</li>
-                    </ul>
-               </section>
+                        )
+                      }) : (<p className="no-results">No Results Found 🙁 </p>)}
+                      {this.state.showModal &&
+                        <ListingModal
+                        handleShowModal={this.handleShowModal}
+                        props={this.state}
+                        image={this.state.image} address={this.state.address} 
+                        city={this.state.city} rooms={this.state.rooms} floorSpace={this.state.floorSpace}
+                        price={this.state.price} data={this.state}
+                        onCloseModal={this.handleCloseModal}
+                        /> }
+                </section>
+                <Pagination
+                  paginate={this.paginate}
+                  listingPerPage={listingPerPage}
+                  totalListings={totalListings}
+                  currentPage={currentPage}
+                /> 
             </div>
         );
     }

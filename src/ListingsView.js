@@ -27,7 +27,7 @@ class ListingsView extends React.Component {
       max_price: 10000000,
       min_floor_space: 0,
       max_floor_space: 50000,
-      elavator: false,
+      elavators: false,
       finished_basement: false,
       gym: false,
       swimming_pool: false,
@@ -53,6 +53,7 @@ class ListingsView extends React.Component {
  
 
   change = (event) => {
+    
     let name = event.target.name
     let value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value
 
@@ -76,7 +77,7 @@ class ListingsView extends React.Component {
       this.state.max_price && item.floorSpace >= 
       this.state.min_floor_space && item.floorSpace <= 
       this.state.max_floor_space && item.rooms >= this.state.bedrooms
-    })
+    }) 
 
     if(this.state.city != "All") {
       newData = newData.filter((item) => {
@@ -88,13 +89,13 @@ class ListingsView extends React.Component {
       newData = newData.filter((item) => {
         return item.homeType == this.state.homeType
       })
-    }
+    } 
 
     if(this.state.sortby == 'price-dsc') {
       newData = newData.sort((a,b) => {
         return a.price - b.price
       })
-    }
+    } 
 
     if(this.state.sortby == 'price-asc') {
       newData = newData.sort((a,b) => {
@@ -115,7 +116,29 @@ class ListingsView extends React.Component {
       })
     }
 
+    if (this.state.elavators !== false) {
+      newData = newData.filter((item) => {
+        return item.extras.includes('elavator') === true ? item : null
+      })
+    }
 
+    if (this.state.finished_basement !== false) {
+      newData = newData.filter((item) => {
+        return item.extras.includes('Finished Basement') === true ? item : null
+      })
+    }
+
+    if (this.state.gym !== false) {
+      newData = newData.filter((item) => {
+        return item.extras.includes('gym') === true ? item : null
+      })
+    }
+
+    if (this.state.swimming_pool !== false) {
+      newData = newData.filter((item) => {
+        return item.extras.includes('Swimming Pool') === true ? item : null
+      })
+    }
 
     this.setState({
       filteredData: newData
@@ -167,9 +190,9 @@ class ListingsView extends React.Component {
   render() {
   return (
       <div className="App">
-        <Header />
+        <Header /> 
         <section id="content-area">
-          <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}/>
+        <Filter finished_basement={this.state.finished_basement} gym={this.state.gym} swimming_pool={this.state.swimming_pool} elavators={this.state.elavators} change={this.change} globalState={this.state} populateAction={this.populateForms}/>
           <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}/>
         </section>
       </div>

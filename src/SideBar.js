@@ -13,7 +13,7 @@ const SideBar = (props) => {
                 <div className="menu-list__container">
                     <Link className="menu-list" to={{ pathname: '/' }}>Home</Link>
                     <Link className="menu-list" to={{ pathname: '/Listings' }}>Listings</Link>
-                    <Link className="menu-list" to={{ pathname: '/' }}>About</Link>
+                    <Link className="menu-list" to={{ pathname: '/aboutus' }}>About</Link>
                     <Link className="menu-list" to={{ pathname: '/SignIn' }}>Sign In</Link>
                 </div>
             </div>

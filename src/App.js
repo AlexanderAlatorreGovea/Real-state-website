@@ -1,4 +1,6 @@
-import ListingsView from './ListingsView'
+import ListingsView from './ListingsView';
+import AboutUs from './AboutUs';
+
 import '../src/sass/_reset.scss';
 import '../src/sass/main.scss';
 import React from 'react';
@@ -17,6 +19,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/Listings" component={ListingsView} />
         <Route exact path="/SignIn" component={SignIn} />
+        <Route exact path="/AboutUs" component={AboutUs} /> 
       </ScrollToTop>
     </Router>
   );

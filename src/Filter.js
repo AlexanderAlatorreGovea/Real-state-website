@@ -24,8 +24,7 @@ class Filter extends Component {
       homeTypes = () => {
         if(this.props.globalState.populateFormsData.homeTypes != undefined) {
           let { homeTypes } = this.props.globalState.populateFormsData
-    
-     
+          
           return homeTypes.map((item) => {
             return(
               <option id="option"  key={item} value={item}>{item}</option>
@@ -46,10 +45,9 @@ class Filter extends Component {
           })
         }
       }
-
       
     render() {
-        const { globalState } = this.props;
+        const { globalState, finished_basement, gym, swimming_pool } = this.props;
         return (
             <div id="filter">
                 <div className="inside">
@@ -81,26 +79,26 @@ class Filter extends Component {
                     <span className="title">Floor Space</span>
                     <input type="text" value={globalState.min_floor_space} name="min_floor_space" className="min-floor-space"  onChange={this.props.change}  />
                     <input type="text" value={globalState.max_floor_space} name="max_floor_space" className="max-floor-space"  onChange={this.props.change}  />
-                </div>
+                </div> 
                 <div className="filters extras">
                     <span className="title">
                         Extras 
                     </span>
                     <label htmlFor="extras">
-                        <span>elavators</span>
-                        <input name="elavator" type="checkbox" value="elavator"  onChange={this.props.change}  />
+                        <span>elevators</span>
+                    <input checked={this.props.elavators} name="elavators" type="checkbox" value="elavators"  onChange={this.props.change}  />
                     </label>
                     <label htmlFor="extras">
                         <span>Swimming Pool</span>
-                        <input name="swimming_pool" type="checkbox"  value="swimming_pool"  onChange={this.props.change} />
+                        <input checked={swimming_pool} name="swimming_pool" type="checkbox"  value="swimming_pool"  onChange={this.props.change} />
                     </label>
                     <label htmlFor="extras">
                         <span>Finished Basement</span>
-                        <input name="finished_basement" type="checkbox"  value="finished_basement"  onChange={this.props.change} />
+                        <input checked={finished_basement} name="finished_basement" type="checkbox"  value="finished_basement"  onChange={this.props.change} />
                     </label>
                     <label htmlFor="extras">
                         <span>Gym</span>
-                        <input name="gym" type="checkbox" value="gym"  onChange={this.props.change}  />
+                        <input checked={gym} name="gym" type="checkbox" value="gym"  onChange={this.props.change}  />
                     </label>
                 </div>
                 </div>
