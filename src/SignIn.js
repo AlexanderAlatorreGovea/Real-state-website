@@ -9,14 +9,18 @@ class SignIn extends Component {
     
         this.state = {
           email: '',
-          password: ''
+          password: '',
+          confirmPassword: '',
+          displayName: '',
+          newEmail: '',
+          newPassword: ''
         };
       }
     
       handleSubmit = event => {
         event.preventDefault();
     
-        this.setState({ email: '', password: '' });
+        this.setState({ newPassword: '', newEmail: '', email: '', password: '', displayName: '', confirmPassword: '' });
       };
     
       handleChange = event => {
@@ -25,7 +29,9 @@ class SignIn extends Component {
         this.setState({ [name]: value });
       };
     
+
     render() {
+        const { displayName, email, password, confirmPassword, newEmail, newPassword } = this.state;
         return (
             <div className='SignIn'>
                 <Header />
@@ -46,7 +52,7 @@ class SignIn extends Component {
                     <Form
                         name='password'
                         type='password'
-                        value={this.state.email}
+                        value={this.state.password}
                         handleChange={this.handleChange}
                         label='password'
                         required
@@ -68,19 +74,24 @@ class SignIn extends Component {
                     <Form
                         type='text'
                         value='name'
+                        name='displayName'
+                        label='Display Name'
+                        value={displayName}
                         onChange={this.handleChange}
                         required
                     />
                     <Form
                         type='email'
-                        value='email'
+                        name='newEmail'
+                        value={newEmail}
                         onChange={this.handleChange}
+                        label='Email'
                         required
                     />
                     <Form
                         type='password'
-                        name='password'
-                        value='password'
+                        name='newPassword'
+                        value={newPassword}
                         onChange={this.handleChange}
                         label='Password'
                         required
@@ -88,7 +99,7 @@ class SignIn extends Component {
                     <Form
                         type='password'
                         name='confirmPassword'
-                        value='confirmPassword'
+                        value={confirmPassword}
                         onChange={this.handleChange}
                         label='Confirm Password'
                         required

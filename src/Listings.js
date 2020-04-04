@@ -57,7 +57,7 @@ class Listings extends Component {
         indexOfFirstProduct,
         indexOfLastProduct
       ); 
-      console.log(this.props)
+      console.log(currentListings)
         return (
             <div id="listings">
                <section className="search-area">
@@ -71,53 +71,54 @@ class Listings extends Component {
                             <option value="price-dsc">Lowest Price</option>  
                             <option value="price-asc">Highest Price</option>
                         </select>
-                        <div className="view">
-                            <i className="fas  fa-th-list"></i>
-                            <i className="fa fa-th" aria-hidden="true"></i>
+                        <div className="view" style={{ display: 'flex', flexDirection: 'row' }}>
+                          <i className="fas  fa-th-list" style={{ height: '26px' }}></i>
+                          <i className="fa fa-th" aria-hidden="true" style={{ fontSize: '26.9px', marginTop: '.98px' }}></i>
                         </div>
                     </div>
                </section>
 
                <section className="listings-results">
-                      {currentListings.length ? currentListings.map((listing, index) => {
-                        return (
-                          <div className="col-md-3" key={index}>
-                            <div className="listing">
-                              <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
-                                <span className="address">{listing.address}</span>
-                                <div className="details">
-                                  <div className="col-md-3">
-                                    <div className="user-img"style={{background: `url("${listing.realtor}") no-repeat center center`, backgroundSize: 'cover'}}> </div>
-                                  </div>
-                                  <div className="col-md-9">
-                                    <div className="user-details">
-                                      <span className="user-name" >{`${listing.realtorName}`}</span>
-                                      <span className="post-date">05/05/2019</span>
+                      {currentListings.length ? 
+                        currentListings.map((listing, index) => {
+                          return (
+                            <div className="col-md-3" key={index}>
+                              <div className="listing">
+                                <div className="listing-img" style={{background: `url("${listing.image}") no-repeat center center`}}>
+                                  <span className="address">{listing.address}</span>
+                                  <div className="details">
+                                    <div className="col-md-3">
+                                      <div className="user-img"style={{background: `url("${listing.realtor}") no-repeat center center`, backgroundSize: 'cover'}}> </div>
                                     </div>
-                                    <div className="listing-details">
-                                      <div className="floor-space">
-                                        <i className="fa fa-square-o" aria-hidden="true"></i>
-                                        <span >{listing.floorSpace} ft&sup2;</span>
+                                    <div className="col-md-9">
+                                      <div className="user-details">
+                                        <span className="user-name" >{`${listing.realtorName}`}</span>
+                                        <span className="post-date">05/05/2019</span>
                                       </div>
-                                      <div className="bedrooms">
-                                        <i className="fa fa-bed" aria-hidden="true"></i>
-                                        <span >{listing.rooms} bedrooms</span>
+                                      <div className="listing-details">
+                                        <div className="floor-space">
+                                          <i className="fa fa-square-o" aria-hidden="true"></i>
+                                          <span >{listing.floorSpace} ft&sup2;</span>
+                                        </div>
+                                        <div className="bedrooms">
+                                          <i className="fa fa-bed" aria-hidden="true"></i>
+                                          <span >{listing.rooms} bedrooms</span>
+                                        </div>
+                                      </div>
+                                      <div className="view-btn" key={index}
+                                        onClick={this.handleShowModal.bind(null, listing)}
+                                      >
+                                        View Listing
                                       </div>
                                     </div>
-                                    <div className="view-btn" key={index}
-                                      onClick={this.handleShowModal.bind(null, listing)}
-                                    >
-                                      View Listing
-                                    </div>
                                   </div>
+                                </div> 
+                                <div className="bottom-info">
+                                  <span className="price">${listing.price}</span>
+                                  <span className="location"><i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
                                 </div>
                               </div> 
-                              <div className="bottom-info">
-                                <span className="price">${listing.price}</span>
-                                <span className="location"><i className="fa fa-map-marker" aria-hidden="true"></i> {listing.city}, {listing.state} </span>
-                              </div>
                             </div>
-                          </div>
                         )
                       }) : (<p className="no-results">No Results Found 🙁 </p>)}
                       {this.state.showModal &&
@@ -130,12 +131,14 @@ class Listings extends Component {
                         onCloseModal={this.handleCloseModal}
                         /> }
                 </section>
-                <Pagination
-                  paginate={this.paginate}
-                  listingPerPage={listingPerPage}
-                  totalListings={totalListings}
-                  currentPage={currentPage}
-                /> 
+                {currentListings.length ?
+                  <Pagination
+                    paginate={this.paginate}
+                    listingPerPage={listingPerPage}
+                    totalListings={totalListings}
+                    currentPage={currentPage}
+                  /> 
+                : ''}
             </div>
         );
     }
