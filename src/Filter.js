@@ -18,7 +18,6 @@ class Filter extends Component {
             )
           })
         }
-    
       }
 
       homeTypes = () => {
@@ -85,7 +84,7 @@ class Filter extends Component {
                         Extras 
                     </span>
                     <label htmlFor="extras">
-                        <span>elevators</span>
+                        <span>Elevators</span>
                     <input checked={this.props.elavators} name="elavators" type="checkbox" value="elavators"  onChange={this.props.change}  />
                     </label>
                     <label htmlFor="extras">

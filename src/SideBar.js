@@ -1,6 +1,6 @@
 import React from 'react';
 import './sass/SideBar.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const SideBar = (props) => {
     return (
@@ -11,10 +11,10 @@ const SideBar = (props) => {
                     onClick={props.onClose}
                 class="closebtn" >&times;</a>
                 <div className="menu-list__container">
-                    <Link className="menu-list" to={{ pathname: '/' }}>Home</Link>
-                    <Link className="menu-list" to={{ pathname: '/Listings' }}>Listings</Link>
-                    <Link className="menu-list" to={{ pathname: '/aboutus' }}>About</Link>
-                    <Link className="menu-list" to={{ pathname: '/SignIn' }}>Sign In</Link>
+                    <NavLink className="menu-list" exact={true} activeStyle={{ color: 'white'}} to={{ pathname: '/' }}>Home</NavLink>
+                    <NavLink className="menu-list" exact={true} activeStyle={{ color: 'white' }}  to={{ pathname: '/Listings' }}>Listings</NavLink>
+                    <NavLink className="menu-list" exact={true} activeStyle={{ color: 'white' }}  to={{ pathname: '/aboutus' }}>About</NavLink>
+                    <NavLink className="menu-list" exact={true} activeStyle={{ color: 'white' }}  to={{ pathname: '/SignIn' }}>Sign In</NavLink>
                 </div>
             </div>
             <span style={{fontSize: '60px', cursor: 'pointer'}} >&#9776;</span>
@@ -24,3 +24,4 @@ const SideBar = (props) => {
 
 export default SideBar;
 
+ 

@@ -37,8 +37,8 @@ class SignIn extends Component {
                 <Header />
                 <div className='sign-in-and-sign-up'>
                 <div className='sign-in'>
-                    <h2 className='title'>I already have an account</h2>
-                    <span className='sub-title'>Sign in with your email and password</span>
+                    <h2 className='title animated fadeInUp'>I already have an account</h2>
+                    <span className='sub-title animated fadeInUp'>Sign in with your email and password</span>
 
                     <form onSubmit={this.handleSubmit}>
                     <Form
@@ -46,7 +46,7 @@ class SignIn extends Component {
                         type='email'
                         handleChange={this.handleChange}
                         value={this.state.email}
-                        label='email'
+                        label='Email'
                         required
                     />
                     <Form
@@ -54,7 +54,7 @@ class SignIn extends Component {
                         type='password'
                         value={this.state.password}
                         handleChange={this.handleChange}
-                        label='password'
+                        label='Password'
                         required
                     />
                     <div className='buttons'>
@@ -65,11 +65,11 @@ class SignIn extends Component {
                         Sign In With Google
                         </button>
                     </div>
-                    </form>
+                    </form> 
                 </div>
                 <div className='sign-up'>
-                    <h2 className='title'>I do not have a account</h2>
-                    <span className='sub-title'>Sign up with your email and password</span>
+                    <h2 className='title animated fadeInUp'>I do not have a account</h2>
+                    <span className='sub-title animated fadeInUp'>Sign up with your email and password</span>
                     <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <Form
                         type='text'

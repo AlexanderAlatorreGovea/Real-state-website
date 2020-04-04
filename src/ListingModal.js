@@ -8,11 +8,10 @@ const modalRoot = document.getElementById('modal-root')
 class ListingModal extends React.Component {
   constructor () {
     super() 
-    this.state = {
-      data: []
+      this.state = {
+        data: []
+      }
     }
-}
-
 
   el = document.createElement('div')
   componentDidMount() {
@@ -23,27 +22,26 @@ class ListingModal extends React.Component {
     modalRoot.removeChild(this.el)
   }
 
-
-
   render() {
   const { listing, data, onCloseModal, image, address, city, rooms, floorSpace, price } = this.props;
   return ReactDOM.createPortal(
         <div
-        style={{
-          position: 'fixed',
-          top: '0',
-          bottom: '0',
-          left: '0',
-          right: '0',
-          display: 'grid',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: 'rgba(0,0,0,0.9)',
-          zIndex: '100',
-          height: '100%',
-          width: '100%'
-        }}
-      >
+          style={{
+            position: 'fixed',
+            top: '0',
+            bottom: '0',
+            left: '0',
+            right: '0',
+            display: 'grid',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: 'rgba(0,0,0,0.9)',
+            zIndex: '100',
+            height: '100%',
+            width: '100%'
+          }}
+          onClick={this.props.onCloseModal}
+        >
       <div onClick={this.props.onCloseModal} className="svg-container">
             <svg  className="x" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><g stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg>
         </div>

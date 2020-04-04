@@ -33,6 +33,9 @@
     @media screen and (max-width: 850px) {
       margin-top: 3rem;
      }
+     @media screen and (max-width: 450px) {
+      padding: 2rem;
+    }
      @media only screen and (max-width: 320px) {
       width: 320px;
     }
@@ -55,6 +58,9 @@
       margin-top: 3.5rem;
       margin-bottom: 4rem;
      }
+      @media screen and (max-width: 450px) {
+        padding: 2rem;
+      }
      @media only screen and (max-width: 320px) {
       width: 320px;
       }

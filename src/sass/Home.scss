@@ -516,6 +516,7 @@ $bp-small: 37.5em;    // 600px;
   font-size: 4.5rem;
   color: $color-grey-light-1;
   line-height: 1;
+  animation-delay: 0.3s;
 }
 
 .heading-2 {
@@ -538,6 +539,7 @@ $bp-small: 37.5em;    // 600px;
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
+  animation-delay: 0.2s;
 
   &--light { color: $color-grey-light-1; }
   &--dark { color: $color-grey-dark-1; }
