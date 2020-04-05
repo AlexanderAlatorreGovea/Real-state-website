@@ -1,0 +1,54 @@
+$info: #CDE8F6;
+$info-text: #447EAF;
+$warn: #F8F4D5;
+$warn-text: #96722E;
+$error: #ECC8C5;
+$error-text: #B83C37;
+$success: #DDF3D5;
+$success-text: #597151;
+
+.alert {
+  width: 440px;
+  border-radius: 6px;
+  margin: 20px auto;
+  padding: auto 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  i{
+    vertical-align: middle;
+    padding: 20px;
+    &.exit-button{
+      float: right;
+      opacity: .4;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+}
+.message-text {
+  vertical-align: middle;
+}
+
+.error {
+  background-color: $error;
+  border:  darken($error, 20%) 2px solid;
+  color: $error-text;
+  .fa-check {
+    visibility: hidden;
+  }
+}
+
+.success {
+  background-color: $success;
+  border:  darken($success, 20%) 2px solid;
+  color: $success-text;
+}

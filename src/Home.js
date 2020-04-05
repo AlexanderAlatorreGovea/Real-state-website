@@ -29,6 +29,9 @@ import gal_12 from './images/gal-12.jpeg';
 import gal_13 from './images/gal-13.jpeg';
 import gal_14 from './images/gal-14.jpeg';
 import back from './images/back.jpg';
+import pdf from './pdf/resume.pdf'
+
+import { showAlert } from './alert/alert'; 
 
 
 class Home extends Component {
@@ -47,6 +50,10 @@ class Home extends Component {
     handleShowModal = () => this.setState({showModal: true})
      
     handleCloseModal = () => this.setState({showModal: false})
+
+    showAlert = () => {
+       return showAlert('success', 'succesfully downloaded');
+    }
 
     componentDidMount() {
         const wow = new WOW.WOW();
@@ -134,12 +141,12 @@ class Home extends Component {
 
                 <footer className="footer" style={{marginTop: '20%'}}>
                     <ul className="nav">
-                            <li className="nav__item"><Link style={{color: 'white'}} to={{ pathname: '/Listings' }} className="nav__link wow fadeInUp">Find your dream home</Link></li>
-                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Request proposal</Link></li>
-                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Download home planner</Link></li>
-                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Contact us</Link></li>
-                            <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Submit your property</Link></li>
-                            <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link wow fadeInUp">Come work with us!</Link></li>
+                        <li className="nav__item"><Link style={{color: 'white'}} to={{ pathname: '/Listings' }} className="nav__link wow fadeInUp">Find your dream home</Link></li>
+                        <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Request proposal</Link></li>
+                        <li className="nav__item" onClick={this.showAlert}><a style={{ color: 'white' }} href={pdf} download target="_self" className="nav__link wow fadeInUp">Download home planner</a></li>
+                        <li className="nav__item"><Link style={{ color: 'white' }} to={{ pathname: '/aboutus' }} className="nav__link wow fadeInUp">Contact us</Link></li>
+                        <li className="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} className="nav__link wow fadeInUp">Submit your property</Link></li>
+                        <li class="nav__item"><Link  style={{color: 'white'}} to={{ pathname: '/SignIn' }} class="nav__link wow fadeInUp">Come work with us!</Link></li>
                     </ul>
                     <p className="copyright">
                         &copy; Copyright 2019 by Alexander Govea.
