@@ -60,7 +60,6 @@ class Listings extends Component {
         indexOfFirstProduct,
         indexOfLastProduct
       ); 
-      console.log(currentListings)
         return (
             <div id="listings">
                <section className="search-area">
@@ -76,7 +75,7 @@ class Listings extends Component {
                       </select>
                       <div className="view" style={{ display: 'flex', flexDirection: 'row' }}>
                         <i className="fas  fa-th-list" style={{ height: '26px' }}></i>
-                        <i className="fa fa-th" aria-hidden="true" style={{ fontSize: '26.9px', marginTop: '.98px' }}></i>
+                        <i className="fas  fa-th-list" style={{ height: '26px' }}></i>
                       </div>
                   </div>
                </section>

@@ -15,31 +15,43 @@
 }
 
 .nav-btn {
-    border: none;
-    border-radius: 0;
-
     background-color: #fff;
     height: 2px;
     width: 4.5rem;
     margin-top: 4rem;
-
+    border-color: #80bdff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
     &::before,
     &::after {
         background-color: #fff;
         height: 2px;
         width: 4.5rem;
-        content: "";
+        content: '';
         display: block;
+        border-color: #80bdff !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
     }
-
-    &::before { transform: translateY(-1.5rem); }
-    &::after { transform: translateY(1.3rem); }
+    &::before {
+        transform: translateY(-1.5rem);
+        border-color: #80bdff !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    }
+    &::after {
+        transform: translateY(1.3rem);
+        border-color: #80bdff !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    }
 
     @media only screen and (max-width: $bp-large) {
         margin-top: 0;
         margin-right: 3rem;
 
-        &::before { transform: translateY(-1.2rem); }
-        &::after { transform: translateY(1rem); }
+        &::before {
+            transform: translateY(-1.2rem);
+        }
+        &::after {
+            transform: translateY(1rem);
+        }
     }
 }
+
