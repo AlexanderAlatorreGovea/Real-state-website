@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import '../src/sass/_reset.scss';
-import '../src/sass/main.scss';
+//import '../src/sass/main.scss';
+import './sass/main.scss';
 import Filter from  './Filter';
 import Listings from './Listings';
 import './sass/Filter.scss';
