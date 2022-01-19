@@ -277,7 +277,6 @@
         cursor: pointer;
         transition: all .4s ease-in-out;
         &:hover{
-            //padding: 2rem;
             background: rgb(252, 110, 139);
             color: #0C002B;
         }
@@ -291,7 +290,6 @@
     }
   }
   
-  /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     .col-md-3 {
         width: 95%;
@@ -299,7 +297,6 @@
     .view-btn {
         width: 100px;
     }
-
     .filters{
         display: flex;
         flex-wrap: wrap;   

@@ -1,4 +1,3 @@
-// COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #B28451;
 
@@ -10,15 +9,13 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #54483A;
 $color-grey-dark-2: #6D5D4B;
 
-// FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
-// RESPONSIVE BREAKPOINTS
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
+$bp-largest: 75em;  
+$bp-large: 62.5em;  
+$bp-medium: 50em;   
+$bp-small: 37.5em;    
 
 *,
 *::before,
@@ -30,7 +27,7 @@ $bp-small: 37.5em;    // 600px;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    font-size: 62.5%; 
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;

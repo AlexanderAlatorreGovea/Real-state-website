@@ -1,11 +1,11 @@
 #slider {
-    .slick-dots {
-        display: none !important;
+  .slick-dots {
+    display: none !important;
+  }
+  div {
+    height: 500px;
+    img {
+      height: 100%;
     }
-    div {
-        height: 500px;
-        img { 
-            height: 100%;
-        }
-    }
+  }
 }
