@@ -1,30 +1,26 @@
-import React from 'react';
-import {
-  Route,
-  BrowserRouter as Router,
-  Switch
-} from 'react-router-dom';
+import React from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import WOW from "wowjs";
 
-import '../src/sass/_reset.scss';
-import '../src/sass/main.scss';
 
-import ListingsView from './ListingsView';
-import AboutUs from './AboutUs';
-import Home from './Home';
-import SignIn from './SignIn';
-import ScrollToTop from './ScrollToTop';
+import ListingsView from "./ListingsView";
+import AboutUs from "./AboutUs";
+import Home from "./Home";
+import SignIn from "./SignIn";
+import ScrollToTop from "./ScrollToTop";
+
+import "../src/sass/_reset.scss";
+import "../src/sass/main.scss";
 
 class App extends React.Component {
-
   componentDidMount() {
     const wow = new WOW.WOW();
     wow.init();
-  } 
+  }
 
   render() {
     return (
-      <Router >
+      <Router>
         <ScrollToTop>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -36,6 +32,6 @@ class App extends React.Component {
       </Router>
     );
   }
-};
+}
 
 export default App;
