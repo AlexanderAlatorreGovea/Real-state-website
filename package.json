@@ -11,7 +11,7 @@
     "react-google-autocomplete": "^1.1.2",
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-slick": "^0.25.2",
     "wowjs": "^1.1.3"
   },
