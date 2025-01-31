@@ -163,7 +163,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Aparment',
-         image: 'https://www.daiwahouse.com/English/businessfield/housing/images/kodate_main01.jpg',
+         image: 'https://img.jamesedition.com/listing_images/2024/09/24/16/19/45/3724e159-fae3-4e5c-9953-d98979de2a3b/je/507x312xc.jpg',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'  
     },
@@ -213,7 +213,7 @@ const listingsData = [
             'pool'
          ],
          homeType: 'Aparment',
-         image: 'https://photos.zillowstatic.com/p_e/ISy31v6gmez66d0000000000.jpg',
+         image: 'https://wp-tid.zillowstatic.com/52/GettyImages-175259322-1_1200-1-d9e272-1024x805.jpg',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'
     },
@@ -230,7 +230,7 @@ const listingsData = [
             'gym'
          ],
          homeType: 'Ranch',
-         image: 'https://s3.amazonaws.com/baristanet/baristanet/baristanetnew/wp-content/uploads/2019/11/Orange-Road-e1575059815752.jpg',
+         image: 'https://static.schumacherhomes.com/umbraco/media/wvflutbh/image4.jpg?format=webp',
          realtor : realtor_1,
          realtorName : 'Erik Feinman'
     },
@@ -345,7 +345,7 @@ const listingsData = [
             'gym'
          ],
          homeType: 'house',
-        image: 'https://s3.amazonaws.com/baristanet/baristanet/baristanetnew/wp-content/uploads/2019/11/Orange-Road-e1575059815752.jpg',
+        image: 'https://static.schumacherhomes.com/umbraco/media/wvflutbh/image4.jpg?format=webp',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'
      },
@@ -361,7 +361,7 @@ const listingsData = [
             'gym'
          ],
          homeType: 'Ranch',
-        image: 'https://freshome.com/wp-content/uploads/2018/09/contemporary-exterior.jpg',
+        image: 'https://static.homeguide.com/assets/images/content/homeguide-typical-house-in-suburban-Los-Angeles-California.jpg',
          realtor : realtor_1,
          realtorName : 'Erik Feinman'
      },
@@ -378,7 +378,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Aparment',
-        image: 'https://www.washingtonian.com/wp-content/uploads/2019/04/chesterbrookfeatured427.jpg',
+        image: 'https://learncalifornia.org/wp-content/uploads/2024/01/oxnard-homes-for-sale-1024x585.jpg',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'  
     },
@@ -395,7 +395,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Studio',
-         image: 'https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2019/07/July-open-houses-header-1.jpg',
+         image: 'https://res.cloudinary.com/brickandbatten/images/w_2560,h_1566,c_scale/f_auto,q_auto/v1713267421/wordpress_assets/313364-Alabaster-Caviar-TeakStain-A-copy/313364-Alabaster-Caviar-TeakStain-A-copy.jpg?_i=AA',
          realtor : realtor_1,
          realtorName : 'Erik Feinman'
      },
@@ -410,7 +410,7 @@ const listingsData = [
             'elavator'
          ],
          homeType: 'Room',
-        image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2016%2F02%2F15230656%2Fwhite-modern-house-curved-patio-archway-c0a4a3b3.jpg',
+        image: 'https://www.century21.com/listhub/photo/maxxmax/lh.rdcpix.com/dce6c353e4c92a529d2f94729ea604b0l-f3896943610r.jpg',
          realtor : realtor_2,
          realtorName : 'Kim Brown'
      },
@@ -428,7 +428,7 @@ const listingsData = [
             'pool'
          ],
          homeType: 'Aparment',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRP2lKUVqyboy6PfwYHqf5_HaCWbisXeQWaFJWP4-MJT18-qw1u&usqp=CAU',
+        image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'
     },
@@ -460,7 +460,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Room',
-        image: 'https://alliancehomes.com/wp-content/uploads/3-Riley-Meadows-Orchard-Park-large-001-Exterior-Front-1499x1000-72dpi-1024x684.jpg',
+        image: 'https://www.livehome3d.com/assets/img/articles/design-house/how-to-design-a-house.jpg',
          realtor : realtor_2,
          realtorName : 'Kim Brown'
         },
@@ -476,7 +476,7 @@ const listingsData = [
             'gym'
          ],
          homeType: 'Aparment',
-        image: 'https://media.workandmoney.com/2a/76/2a763836b02d426197466e2d396d5ba8.jpeg',
+        image: 'https://www.century21.com/listhub/photo/maxxmax/lh.rdcpix.com/dce6c353e4c92a529d2f94729ea604b0l-f3896943610r.jpg',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'
       },
@@ -508,7 +508,7 @@ const listingsData = [
             'Finished Basement'
          ],
          homeType: 'Aparment',
-        image: 'https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2019/11/1-2639-Idlewood-Circle-Welcome-Home.jpg',
+        image: 'https://www.century21.com/listhub/photo/maxxmax/lh.rdcpix.com/33f61d70410c199bd487b20a32f240f2l-f791946895r.jpg',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'     
       },
@@ -542,7 +542,7 @@ const listingsData = [
             'bathroom'
          ],
          homeType: 'Aparment',
-        image: 'https://www.kut.org/sites/kut/files/styles/x_large/public/201901/Genesis.png',
+        image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
          realtor : realtor_2,
          realtorName : 'Kim Brown'
      },
@@ -592,7 +592,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Aparment',
-        image: 'https://i.ytimg.com/vi/n3_nLqFsAIQ/maxresdefault.jpg',
+        image: 'https://res.cloudinary.com/brickandbatten/images/w_2560,h_1566,c_scale/f_auto,q_auto/v1713267421/wordpress_assets/313364-Alabaster-Caviar-TeakStain-A-copy/313364-Alabaster-Caviar-TeakStain-A-copy.jpg?_i=AA',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'  
     },
@@ -757,7 +757,7 @@ const listingsData = [
             'bathroom'
          ],
          homeType: 'Aparment',
-        image: 'https://www.washingtonian.com/wp-content/uploads/2019/04/BethesdaFeatured420.jpg',
+        image: 'https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp',
          realtor : realtor_2,
          realtorName : 'Kim Brown'
      },
@@ -938,7 +938,7 @@ const listingsData = [
             'Finished Basement'
          ],
          homeType: 'Aparment',
-        image: 'https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2019/09/open-houses-header-sept-21.jpg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx07lfk6kqb5xTp3mE-6UluH5KmJ5EULsTow&s',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'     
       },
@@ -1022,7 +1022,7 @@ const listingsData = [
             'Swimming Pool'
          ],
          homeType: 'Aparment',
-        image: 'https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2019/09/open-houses-header-sept-21.jpg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx07lfk6kqb5xTp3mE-6UluH5KmJ5EULsTow&s',
          realtor : realtor_3,
          realtorName : 'Toby Ramsey'  
     },
@@ -1079,7 +1079,3 @@ const listingsData = [
 ]
 
 export default listingsData;
-
-
-
-
